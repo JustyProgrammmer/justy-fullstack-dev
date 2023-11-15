@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cartões</title>
+
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: calc(100vh - 255px);
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+        }
+
+        div:not(.info) {
+            box-shadow: 0 4px 8px 0 rgba(197, 186, 186, 0.2), 0 6px 20px 0 rgba(168, 154, 154, 0.5);
+            padding: 20px 10px;
+            border-radius: 10px;
+            height: 235px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+            position: relative;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: start;
+            margin-left: 10px;
+        }
+
+        h5 {
+            color: #425466;
+            margin-bottom: 5px;
+        }
+
+        h3 {
+            margin-top: 10px;
+            color: #27272E;
+        }
+
+        .carrinho {
+            position: absolute;
+            top: 28px;
+            right: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div>
+            <img src="../assets/rounded.svg" alt="Img Tenis" width="280" height="180">
+            <img src="../assets/x-button.png" alt="Carrinho" class="carrinho" width="50">
+            <div class="info">
+                <h5>Product Name</h5>
+                <h3>$399</h3>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

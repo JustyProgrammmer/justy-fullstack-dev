@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,300;0,400;1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+    transition: all 0.5S;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-image: linear-gradient(to right, red, rgba(0, 0, 255, .3));
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 100px;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.principal-div {
+    position: relative;
+    animation: balance 4s infinite;
+}
+
+@keyframes balance {
+    0% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
+.page-content {
+    position: relative;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.2), 0 18px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 540px;
+    justify-content: start;
+    align-items: center;
+    width: 420px;
+    background: linear-gradient(220deg, #ffb100, #c70000);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: -15px;
+    margin-bottom: -25px;
+    padding: 0 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.card-header h5 {
+    color: white;
+    font-size: 20px;
+}
+
+.card-content {}
+
+.card-content h2 {
+    margin: 30px 0;
+    text-transform: uppercase;
+    color: white;
+    padding: 0 20px;
+    font-size: calc(32px + 50%);
+}
+
+.card-content p {
+    padding: 0 20px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 35px;
+}
+
+.card-content div {
+    position: relative;
+    overflow: hidden;
+    background-color: rebeccapurple;
+    box-sizing: border-box;
+}
+
+.air {
+    color: rgba(255, 255, 255, .4);
+    font-size: 205pt;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    letter-spacing: 20px;
+    margin-left: -25px;
+}
+
+a .card-content div h1 {
+    font-size: 100px;
+    width: 100%;
+    position: relative;
+}
+
+.card-content div img {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.card-footer h3 {
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, .3);
+    letter-spacing: 7px;
+    font-size: 15px;
+}
+
+button {
+    margin: 0 40px;
+    margin-top: 35px;
+    border-color: rgba(0, 0, 255, .6);
+    color: rgba(0, 0, 255, .6);
+    position: relative;
+    z-index: 10;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 15px 45px;
+    border-radius: 40px;
+}
+
+button:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.tenis {
+    position: absolute;
+    width: 450px;
+    left: 30px;
+    bottom: 32px;
+}

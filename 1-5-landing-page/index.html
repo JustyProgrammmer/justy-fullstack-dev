@@ -7,269 +7,8 @@
     <title>Landing Page</title>
 
     <link rel="stylesheet" href="css/resets.css">
-    <link rel="stylesheet" href="css/styles.css">
-
-    <style>
-        html {
-            font-family: sans-serif;
-        }
-
-        * {
-            transition: all .5s;
-        }
-
-        .header-container {
-            max-width: 1280px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 30px;
-            margin: 10px 0;
-            padding-bottom: 5px;
-        }
-
-        header,
-        main,
-        footer {
-            width: 100%;
-            margin: o auto;
-            background-color: white;
-        }
-
-        main,
-        header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-        }
-
-        .container {
-            width: 100%;
-        }
-
-        .header-nav {
-            display: flex;
-            justify-content: start;
-            align-items: center;
-        }
-
-        .header-nav a {
-            color: #333;
-        }
-
-        .sign-in {
-            color: #333;
-        }
-
-        .header-nav img {
-            margin-right: 40px;
-        }
-
-        .header-account {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .sign-up {
-            background-color: black;
-            color: white;
-            text-align: center;
-            padding: 8px 10px;
-            margin-left: 30px;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        nav a {
-            margin-right: 30px;
-        }
-
-        .section-one {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;
-            width: 765px;
-            margin: 0 auto;
-        }
-
-        .section-one h1 {
-            text-align: center;
-            margin: 10px auto;
-            width: 700px;
-            font-size: 54px;
-            font-weight: bold;
-        }
-
-        .section-one p {
-            text-align: center;
-            width: 550px;
-            margin: 0 auto;
-        }
-
-        .div-links {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto;
-            margin-top: 16px;
-            margin-bottom: 40px;
-        }
-
-        .div-links a:first-child {
-            background-color: blue;
-            color: white;
-            padding: 8px 16px;
-            margin-right: 20px;
-        }
-
-        .div-links a:last-child {
-            background-color: black;
-            color: white;
-            padding: 8px 16px;
-        }
-
-        .div-more {
-            position: relative;
-            margin: 0 auto;
-        }
-
-        .div-more a {
-            position: absolute;
-            bottom: -12px;
-            background-color: blue;
-            left: 170px;
-            color: white;
-            border-radius: 20px;
-            padding: 8px 16px;
-        }
-
-        .linha {
-            border-bottom: 1px solid #DDD;
-            margin-bottom: 40px;
-        }
-
-        /**********************************/
-
-        .section-two {
-            background-color: #F5F5F5;
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            align-items: center;
-            margin-top: 100px;
-            padding: 20px 0;
-            padding-bottom: 20px;
-        }
-
-        .section-two h3 {
-            font-size: 30px;
-            margin-bottom: 5px;
-        }
-
-        .section-two p {
-            text-align: center;
-            color: #333;
-            width: 460px;
-            margin-bottom: 20px;
-        }
-
-        .section-two img {
-            background-color: rebeccapurple;
-        }
-
-        .section-three {
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            align-items: center;
-            margin-top: 10px;
-            padding: 20px 0;
-            padding-bottom: 10px;
-        }
-
-        .section-three h3 {
-            font-size: 30px;
-            margin-bottom: 5px;
-        }
-
-        .section-three p {
-            text-align: center;
-            color: #333;
-            width: 460px;
-            margin-bottom: 20px;
-        }
-
-        .section-three-cards {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 40px;
-            background-color: #F5F5F5;
-            padding-bottom: 40px;
-            width: 100%;
-        }
-
-        .card-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            gap: 10px;
-            margin-top: -30px;
-            background-color: #FFF;
-        }
-
-        .card-container div {
-            background-color: #FFF;
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            border: solid 1px #DDD;
-            border-radius: 2px;
-            width: 180px;
-            padding: 10px;
-            cursor: pointer;
-            align-items: center;
-        }
-
-        .card-container div:hover {
-            background-color: blue;
-            position: relative;
-            margin-top: -10px;
-            margin-bottom: 10px;
-            transition: all .5s;
-            color: #FFF;
-        }
-
-        .card-container div:hover span {
-            background-color: white;
-        }
-
-        .card-container div:hover p,
-        .card-container div:hover h5 {
-            color: white;
-        }
-
-        .card-container div span {
-            background-color: blue;
-            width: 40px;
-            height: 40px;
-            margin-bottom: -10px;
-            border-radius: 40px;
-        }
-
-        .card-container div p {
-            width: 100%;
-            font-size: 12px;
-            margin-top: -10px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-responsive.css">
 </head>
 
 <body>
@@ -309,7 +48,7 @@
                     <a href="#">Learn more</a>
                 </div>
                 <div class="div-more">
-                    <video alt="Primeiro video" width="460" autoplay muted loop>
+                    <video alt="Primeiro video" autoplay muted loop>
                         <source src="assets/video.mp4" type="video/mp4">
                     </video>
                     <a href="#">Watch more</a>
@@ -365,57 +104,57 @@
 
             <section class="section-for">
                 <h4>The most innovative businesses choose Simple</h4>
-                <div>
+                <div class="section-for-topics">
                     <a href="#">Development</a>
                     <a href="#">Blockchain</a>
                     <a href="#">Nextjs</a>
                     <a href="#">Reactjs</a>
                 </div>
                 <div class="section-for-cards">
-                    <div>
-                        <span></span>
-                        <div class="cards-spans-1">
+                    <div class="card">
+                        <div class="div-img"></div>
+                        <div class="card-span-1">
                             <span>Development</span>
-                            <span>Blockchain</span>
+                            <span class="last">Blockchain</span>
                         </div>
                         <p>“How HubSpot saved 25% on developing costs by switching to Simple.”</p>
-                        <div class="cards-spans-2">
+                        <div class="card-span-2">
                             <span></span>
                             <span>By Harry Potter</span>
                         </div>
                     </div>
-                    <div>
-                        <span></span>
-                        <div class="cards-spans-1">
+                    <div class="card">
+                        <div class="div-img"></div>
+                        <div class="card-span-1">
                             <span>Development</span>
-                            <span>Blockchain</span>
+                            <span class="last">Blockchain</span>
                         </div>
                         <p>“How HubSpot saved 25% on developing costs by switching to Simple.”</p>
-                        <div class="cards-spans-2">
+                        <div class="card-span-2">
                             <span></span>
                             <span>By Harry Potter</span>
                         </div>
                     </div>
-                    <div>
-                        <span></span>
-                        <div class="cards-spans-1">
+                    <div class="card">
+                        <div class="div-img"></div>
+                        <div class="card-span-1">
                             <span>Development</span>
-                            <span>Blockchain</span>
+                            <span class="last">Blockchain</span>
                         </div>
                         <p>“How HubSpot saved 25% on developing costs by switching to Simple.”</p>
-                        <div class="cards-spans-2">
+                        <div class="card-span-2">
                             <span></span>
                             <span>By Harry Potter</span>
                         </div>
                     </div>
-                    <div>
-                        <span></span>
-                        <div class="cards-spans-1">
+                    <div class="card">
+                        <div class="div-img"></div>
+                        <div class="card-span-1">
                             <span>Development</span>
-                            <span>Blockchain</span>
+                            <span class="last">Blockchain</span>
                         </div>
                         <p>“How HubSpot saved 25% on developing costs by switching to Simple.”</p>
-                        <div class="cards-spans-2">
+                        <div class="card-span-2">
                             <span></span>
                             <span>By Harry Potter</span>
                         </div>
@@ -424,39 +163,45 @@
             </section>
 
             <section class="section-five">
-                <h4>Ready to get started?</h4>
-                <a href="#">Learn more</a>
+                <div class="section-five-div">
+                    <h4>Ready to get started?</h4>
+                    <a href="#">Learn more</a>
+                </div>
             </section>
         </div>
     </main>
 
+    <div class="linha"></div>
+
     <footer>
         <div>
-            <h6>Subscribe</h6>
+            <h4>Subscribe</h4>
             <form action="#">
-                <input type="email" name="email" id="email">
-                <span>Subscribe</span>
+                <input type="email" name="email" placeholder="Email" id="email">
+                <button>Subscribe</button>
             </form>
             <p>Get the latest news and articles to your inbox every month.</p>
         </div>
-        <div>
-            <h6>Produts</h6>
-            <a href="#">Web Studio</a>
-            <a href="#">DynamicBox Flex</a>
-            <a href="#">Programming Forms</a>
-            <a href="#">Integrations</a>
-            <a href="#">Command-line</a>
+        <div class="footer-links">
+            <div>
+                <h4>Produts</h4>
+                <a href="#">Web Studio</a>
+                <a href="#">DynamicBox Flex</a>
+                <a href="#">Programming Forms</a>
+                <a href="#">Integrations</a>
+                <a href="#">Command-line</a>
+            </div>
+            <div>
+                <h4>Resources</h4>
+                <a href="#">Web Studio</a>
+                <a href="#">DynamicBox Flex</a>
+                <a href="#">Programming Forms</a>
+                <a href="#">Integrations</a>
+                <a href="#">Command-line</a>
+            </div>
         </div>
         <div>
-            <h6>Resources</h6>
-            <a href="#">Web Studio</a>
-            <a href="#">DynamicBox Flex</a>
-            <a href="#">Programming Forms</a>
-            <a href="#">Integrations</a>
-            <a href="#">Command-line</a>
-        </div>
-        <div>
-            <img src="assets/logo-full.png" alt="Logo-full">
+            <img src="assets/logo-full.png" alt="Logo-full" width="100">
         </div>
     </footer>
 

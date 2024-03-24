@@ -1,0 +1,133 @@
+@media only screen and (min-width: 1025px) {
+    .anime-detail div:first-child {
+        width: 75%;
+        max-width: 750px;
+    }
+}
+
+@media only screen and (max-width: 974px) {
+    .div-date-rate {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    nav {
+        display: none;
+    }
+
+    .card-anime-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        row-gap: 25px;
+    }
+
+    .card-anime h3 {
+        text-align: center;
+    }
+
+    /*Aside*/
+
+    .anime-detail {
+        align-items: center;
+    }
+
+    .anime-detail div:first-child {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 974px) {
+    .div-date-rate {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 874px) {
+    .div-date-rate {
+        width: 75%;
+        justify-content: start;
+    }
+
+    .div-date-rate span {
+        margin-right: 10px;
+    }
+
+    .season-eps {
+        width: 75%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .season-eps span {
+        margin-right: 16px;
+    }
+}
+
+@media only screen and (max-width: 724px) {
+    .card-anime-container {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 25px;
+    }
+}
+
+
+@media only screen and (max-width: 674px) {
+    .div-date-rate {
+        width: 100%;
+    }
+
+    .season-eps {
+        width: 100%;
+    }
+
+    .season-eps span {
+        margin-right: 8px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .card-anime-container {
+        grid-template-columns: 1fr;
+        row-gap: 25px;
+        max-width: 500px;
+    }
+
+    .card-anime img {
+        width: 65%;
+        height: auto;
+    }
+
+    .card-anime h3 {
+        margin: 0 5px;
+    }
+}
+
+@media only screen and (max-width: 484px) {
+    .anime-detail div:first-child {
+        width: 100%;
+    }
+
+    .card-anime img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 384px) {
+
+    .season-eps,
+    .div-date-rate,
+    .genres {
+        flex-direction: column;
+        align-items: start;
+        justify-content: flex-start;
+    }
+
+    .season-eps span,
+    .div-date-rate span,
+    .genres span {
+        margin-bottom: 8px;
+    }
+}

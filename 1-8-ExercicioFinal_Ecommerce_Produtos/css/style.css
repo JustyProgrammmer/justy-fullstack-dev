@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Noto+Sans+Khojki&display=swap');
+
+* {
+    font-family: Inter, sans-serif;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+
+body {
+    background-color: #EAEAEA;
+}
+
+/*Header*/
+
+.capa {
+    width: 1280px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 20;
+    top: -25px;
+    height: 125px;
+    background: rgb(234, 234, 234);
+    background: linear-gradient(0deg, rgba(234, 234, 234, 1) 0%, rgb(237, 216, 23) 100%);
+    margin-bottom: 75px;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 30px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header div .logo {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    color: rgb(5, 80, 84);
+}
+
+.logo span {
+    font-size: 24px;
+}
+
+.span-e {
+    font-size: 23px !important;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    min-width: 600px;
+    max-width: 600px;
+    padding-right: 30px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav span:first-child {
+    font-size: 14px;
+    color: rgb(5, 80, 84);
+    ;
+    font-weight: 550;
+    margin-right: 6px;
+    padding-bottom: 6px;
+}
+
+.div-header {
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.div-header div {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+.div-header h1 {
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.div-header button {
+    border-radius: 4px;
+    background-color: #FCED70;
+    font-size: 14px;
+    color: #131313;
+    border: none;
+    text-transform: uppercase;
+    padding: 10px 18px;
+}
+
+.cart-button {
+    width: 24px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.add-to-cart {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    background-color: #d6d5c7;
+    color: rgb(5, 80, 84);
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cart-link {
+    position: relative;
+}
+
+.total-in-cart {
+    position: absolute;
+    background-color: #EAEAEA;
+    padding: 0 8px;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 24px;
+    right: -32px;
+    top: -20px;
+}
+
+/*Footer*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #FEFEFE;
+    color: rgb(5, 80, 84);
+    padding: 40px;
+    font-weight: bold;
+}

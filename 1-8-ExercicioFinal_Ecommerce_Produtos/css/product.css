@@ -1,0 +1,122 @@
+.root {
+    background-color: #FFF;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 75px;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.back {
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.back svg {
+    margin-right: 6px;
+    width: 30px;
+}
+
+.back h1,
+.back svg {
+    color: #555;
+    font-size: 18px;
+}
+
+.product-detail-info {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.product-detail-info img {
+    margin-right: 100px;
+}
+
+.sep-classif {
+    margin: 0 15px;
+}
+
+.details h1 {
+    font-size: 30px;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+.details h2 {
+    font-size: 30px;
+    font-weight: 550;
+    color: #555;
+    margin: 35px 0;
+}
+
+.details h3 {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.details strong {
+    color: #555;
+}
+
+.rate {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.description h4 {
+    margin: 25px 0;
+}
+
+.description h4,
+strong {
+    font-weight: 550;
+}
+
+.sep {
+    margin: 50px 0;
+}
+
+.title-relateds {
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.related-products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.card-related-product {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #FFF;
+    margin: 5px;
+    border: solid 1px #e9e1e1;
+}
+
+.card-related-product h3 {
+    text-align: center;
+    cursor: pointer;
+    padding: 8px;
+    background-color: #F5F5F5;
+}
+
+
+.card-related-product img {
+    width: 150px;
+    margin: 15px;
+}

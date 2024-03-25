@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Ecommerce
+    </title>
+</head>
+
+<body>
+    <script>
+        class Ecommerce {
+            products = [];
+
+            cart = [];
+
+            addProduct(product) {
+                this.products.push(product);
+            }
+
+            setProductPrice(productId, price) {
+                const index = this.products.findIndex(p => p.id == productId);
+
+                this.products[index] = {
+
+                    id: productId,
+
+                    name: this.products[index].name,
+
+                    price: price
+
+                };
+            }
+
+            getAllProducts() {
+                return this.products;
+            }
+
+            getAllProductsNames() {
+                const initialString = "";
+
+                const productsNames = this.products.reduce(
+
+                    (accumulator, currentValue) => accumulator + currentValue.name + " ; ",
+
+                    initialString
+
+                );
+
+                return productsNames;
+            }
+
+            getProductById(id) {
+                return this.products.filter(p => p.id == id);
+            }
+
+            getProductByName(name) {
+                return this.products.filter(p => p.name == name);
+            }
+
+            getProductsByPrice(initialPrice, finalPrice) {
+                return this.products.filter(p => p.price >= initialPrice && p.price <= finalPrice);
+            }
+
+            addProductToCart(product) {
+                this.cart.push(product);
+            }
+
+            getCart() {
+                return this.cart;
+            }
+
+            getCartTotalPrice() {
+                const initialValue = 0;
+
+                const cartTotalPrice = this.cart.reduce(
+
+                    (accumulator, currentValue) => accumulator + currentValue.price,
+
+                    initialValue
+
+                );
+
+                return cartTotalPrice;
+            }
+        }
+
+        const product1 = {
+            id: 1,
+            name: "Producto 1",
+            price: 2000
+        }
+
+        const product2 = {
+            id: 2,
+            name: "Producto 2",
+            price: 1500
+        }
+
+        const product3 = {
+            id: 3,
+            name: "Producto 3",
+            price: 4000
+        }
+
+        /*Testes*/
+
+        const ecommerce = new Ecommerce();
+
+        ecommerce.addProduct(product1)
+
+        ecommerce.addProduct(product2)
+
+        ecommerce.addProduct(product3)
+
+        ecommerce.setProductPrice(3, 5000);
+
+        console.log(ecommerce.getAllProducts());
+
+        console.log(ecommerce.getAllProductsNames());
+
+        console.log(ecommerce.getProductById(3));
+
+        console.log(ecommerce.getProductByName("Producto 2"));
+
+        console.log(ecommerce.getProductsByPrice(4000, 6000));
+
+        ecommerce.addProductToCart(product1);
+
+        ecommerce.addProductToCart(product2);
+
+        console.log(ecommerce.getCart());
+
+        console.log(ecommerce.getCartTotalPrice());
+
+    </script>
+</body>
+
+</html>
